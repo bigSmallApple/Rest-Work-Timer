@@ -28,7 +28,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/work-rest-timer.git
+git clone https://github.com/bigSmallApple/Rest-Work-Timer.git
 cd work-rest-timer
 Run the script:
 
