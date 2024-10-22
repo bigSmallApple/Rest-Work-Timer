@@ -1,47 +1,57 @@
-Work/Rest Timer
-This is a simple Python-based Work/Rest Timer application built using Tkinter for the graphical user interface. It alternates between customizable work and rest periods, helping you maintain a balanced workflow with productive work sessions and regular breaks.
+### README for Work/Rest Timer Application
 
-Features
-Custom Work and Rest Duration: Set your desired work and rest times in minutes.
-Start/Stop Functionality: Start and stop the timer at any time.
-Pause/Resume: Pause the timer and resume when you're ready.
-Audible Beep: Hear a beep when your work or rest session ends (works in some terminal environments).
-Visual Countdown: The interface displays the time remaining in both work and rest periods.
-How to Use
-Set the Timer:
+#### Overview
+This project is a simple Work/Rest Timer application built using the Tkinter library in Python. It allows users to set work and rest intervals, and it displays the time remaining for each interval. The timer switches automatically between work and rest modes, and a popup notification alerts the user when the time is up.
 
-Enter the number of minutes for your work session and rest session in the input fields.
-Start the Timer:
+#### Features:
+- **Work/Rest Mode Switching**: The timer automatically switches between work and rest intervals.
+- **Progress Bar**: A progress bar visualizes how much time is left in each interval.
+- **Pause/Resume Timer**: The user can pause and resume the timer at any time.
+- **Popup Notification**: A popup window alerts the user when the work or rest interval is complete.
+- **Input Validation**: The application validates the user's input for work and rest durations, ensuring valid numbers are entered.
 
-Click the Start Timer button to begin. The timer will first count down the work period, followed by the rest period.
-Pause/Resume:
+#### Requirements:
+- Python 3.x
+- Tkinter (included with Python standard library)
+- `ttk` module (included with Tkinter)
 
-Click the Pause Timer button to temporarily pause the countdown, and click it again to resume the session.
-Stop the Timer:
+#### Setup Instructions:
 
-Click the Stop Timer button to reset and stop the current session.
-Installation
-To run the Work/Rest Timer, you need Python installed on your system. Additionally, Tkinter comes pre-installed with Python in most distributions.
+1. **Install Python**: Ensure you have Python 3 installed. You can download it from [here](https://www.python.org/downloads/).
 
-Steps:
-Clone the repository:
+2. **Run the Application**:
+   Save the provided code in a Python file (e.g., `work_rest_timer.py`) and run it:
+   ```bash
+   python work_rest_timer.py
+   ```
 
-bash
-Copy code
-git clone https://github.com/bigSmallApple/Rest-Work-Timer.git
-cd work-rest-timer
-Run the script:
+#### How to Use:
 
-bash
-Copy code
-python timer.py
-Dependencies
-Tkinter: For the graphical user interface (included with Python).
-Threading: Used to run the timer in a background thread.
-Screenshots
-A sample screenshot of the application interface.
+1. **Set Work and Rest Durations**:
+   - In the "Work (minutes)" field, enter the duration for the work interval in minutes.
+   - In the "Rest (minutes)" field, enter the duration for the rest interval in minutes.
 
-Future Improvements
-Add customizable sound notifications.
-Allow the user to minimize the app to the system tray.
-Implement a history tracker for completed work sessions.
+2. **Start the Timer**:
+   - Press the "Start Timer" button to begin the timer. The application will switch between work and rest modes automatically.
+
+3. **Pause/Resume**:
+   - You can pause the timer at any time by pressing the "Pause Timer" button. To resume, press the "Resume Timer" button.
+
+4. **Stop the Timer**:
+   - To stop the timer, press the "Stop Timer" button, which will reset the timer and UI.
+
+#### Application Components:
+
+1. **Timer Display**:
+   - Shows the current time left in the format `HH:MM:SS`.
+
+2. **Progress Bar**:
+   - Indicates the percentage of time completed in the current interval (work or rest).
+
+3. **Popup Notifications**:
+   - When a work or rest interval is complete, a popup notification informs the user. The user can close the popup to switch to the next mode.
+
+#### Example:
+- **Work Interval**: 25 minutes
+- **Rest Interval**: 5 minutes
+The timer will count down from 25 minutes, show a popup when the work interval is complete, and then switch to the rest interval.
